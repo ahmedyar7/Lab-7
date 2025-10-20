@@ -1,0 +1,1 @@
+## This repository contain my Lab-7 Task of building a calculator using html, css and Javascript
