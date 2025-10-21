@@ -1,3 +1,5 @@
+// Ahmed Yar 480756
+
 // Global variables for Firebase access (required by the environment)
 const appId = typeof __app_id !== "undefined" ? __app_id : "default-app-id";
 const firebaseConfig =
@@ -12,6 +14,7 @@ const MODEL_NAME = "gemini-2.5-flash-preview-09-2025";
 const apiKey = "";
 
 // --- Calculator State & DOM Elements ---
+// Ahmed Yar 480756
 let state = {
   currentMode: "basic", // 'basic', 'scientific', 'unit', 'currency'
   displayValue: "0",
@@ -30,6 +33,7 @@ const modeTitle = document.getElementById("mode-title");
 const conversionStatus = document.getElementById("conversion-status");
 
 // --- Utility Functions ---
+// Ahmed Yar 480756
 const showModal = (title, message) => {
   document.getElementById("modal-title").textContent = title;
   document.getElementById("modal-message").textContent = message;
@@ -51,6 +55,7 @@ const updateDisplay = () => {
 };
 
 // --- Core Calculator Logic ---
+// Ahmed Yar 480756
 const resetCalculator = () => {
   state.displayValue = "0";
   state.operator = null;
@@ -195,6 +200,7 @@ const handleCalcButton = (value, type) => {
 };
 
 // --- Mode & UI Management ---
+// Ahmed Yar 480756
 
 const toggleMenu = () => {
   const isVisible = subMenu.classList.toggle("opacity-0");
@@ -299,6 +305,7 @@ const renderCalculatorGrid = (buttons) => {
 };
 
 // --- Conversion Mode Logic (Simulated API Call) ---
+// Ahmed Yar 480756
 
 // Simple exponential backoff retry mechanism
 async function fetchWithRetry(url, options, retries = 3) {
@@ -497,6 +504,7 @@ const updateUI = () => {
 };
 
 // --- Initialization ---
+// Ahmed Yar 480756
 document.addEventListener("DOMContentLoaded", () => {
   menuButton.addEventListener("click", toggleMenu);
   // Close menu if clicking outside (optional, but good UX)
@@ -513,3 +521,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Start the application in Basic mode
   updateUI();
 });
+// Ahmed Yar 480756

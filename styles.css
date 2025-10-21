@@ -1,3 +1,4 @@
+/* Ahmed Yar 480756 */
 body {
   font-family: "Inter", sans-serif;
   background-color: #1a202c; /* Dark background for the page */
@@ -8,6 +9,7 @@ body {
   padding: 20px;
 }
 /* Custom styles for the calculator buttons and layout */
+/* Ahmed Yar 480756 */
 .calculator-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -34,6 +36,7 @@ body {
   transform: translateY(0);
 }
 /* Color variations */
+/* Ahmed Yar 480756 */
 .btn-number {
   background-color: #2d3748;
   color: #e2e8f0;
@@ -64,6 +67,7 @@ body {
 }
 
 /* Conversion mode styling */
+/* Ahmed Yar 480756 */
 .conversion-view {
   background-color: #2d3748;
   padding: 16px;
@@ -77,3 +81,4 @@ body {
     max-width: 400px;
   }
 }
+/* Ahmed Yar 480756 */
